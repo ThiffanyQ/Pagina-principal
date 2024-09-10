@@ -1,0 +1,235 @@
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(246, 159, 200); 
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a{
+
+    font-weight: bold; 
+    color: rgb(162, 7, 93);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+    margin: 0 20px;
+}
+
+nav ul li a:hover{
+    color: rgb(207, 255, 173);
+}
+
+
+body{
+    background-color:rgb(252, 220, 235); 
+   margin: 50px;
+}
+
+h1{
+    text-align: center;
+    color:rgb(162, 7, 93);
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+h2{
+    text-align: center;
+    color:rgb(162, 7, 93);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+hr{
+    height: 5px;
+    background-color:rgb(252, 193, 225); ;
+}
+
+.Perfumes img{
+    width: 15%;
+    margin: auto;
+    border-radius: 360px;
+    
+
+}
+nav ul li .dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #ff9ed3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color:  #ff9ed3; 
+}
+
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+.slider {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: relative; 
+}
+.slides {
+    display: flex; 
+    width: 100%; 
+    animation: slideAnimation 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0; 
+}
+@keyframes slideAnimation {
+    0% { transform: translateX(0); } 
+    33% { transform: translateX(-100%); } 
+    66% { transform: translateX(-200%); } 
+    100% { transform: translateX(0); } 
+}
+.slide img {
+    width: 100%; 
+    display: block; 
+}
+.body {
+   font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container {
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+.colecao{
+    background-color: rgb(243, 158, 209);
+    border: 1px solid #f1118c;
+    border-radius: 50px; 
+    padding: 20px;
+    box-shadow: 0 40px 10px rgba(255, 0, 115, 0.1); 
+    flex: 1; 
+    max-width: 300px; 
+}
+
+.colecao h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255); 
+}
+
+.colecao p{
+    color:rgb(162, 7, 93);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+   background-color: rgb(187, 87, 142);
+   color: rgb(255, 204, 230);
+   padding: 40px 0;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section{
+    flex-basis: 23%/*faz com que as seções ocupem 23% da largura, com espaço para margens*/;
+    margin-bottom: 20px;
+   
+}
+
+.footer-section h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(139, 5, 79);
+}
+
+.footer-section p, .footer-section ul{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.footer-section ul{
+    list-style-type: none;
+}
+
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a{
+    color: rgb(255, 204, 230);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover{
+    color: #ed0786;
+}
+.social-links a{
+    display: inline-block;
+    margin-right: 10px;
+    color:rgb(255, 204, 230);
+    text-decoration: none;
+    transition: o.3s;
+}
+
+.social-links a:hover{
+    color: rgb(162, 7, 93);;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid rgb(165, 3, 95);;
+    font-size: 14px;
+}
+
+ .footer-bottom p{
+    margin: 0;
+ }
